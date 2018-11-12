@@ -145,6 +145,7 @@
     <None Include="Properties\DataSources\BL.Rentas.Resul.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Resultado.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.SeguridadBL.datasource" />
+    <None Include="Properties\DataSources\BL.Rentas.ServicioBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Tipo.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.TiposBL.datasource" />
     <None Include="Properties\DataSources\BL.Rentas.Usuario.datasource" />

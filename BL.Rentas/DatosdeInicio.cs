@@ -58,6 +58,17 @@ namespace BL.Rentas
             ciudad3.NombreCiudad = "Tegucigalpa";
             contexto.Ciudades.Add(ciudad3);
 
+            var servicio1 = new Servicio();
+            servicio1.Descripcion = "Recargas Tigo";
+            contexto.Servicios.Add(servicio1);
+
+            var servicio2 = new Servicio();
+            servicio2.Descripcion = "Recargas Claro";
+            contexto.Servicios.Add(servicio2);
+
+            var servicio3 = new Servicio();
+            servicio3.Descripcion = "Refrescos";
+            contexto.Servicios.Add(servicio3);
 
             base.Seed(contexto);
         }

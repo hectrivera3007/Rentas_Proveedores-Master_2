@@ -100,11 +100,13 @@ namespace BL.Rentas
         public string Email { get; set; }
         public long Telefono { get; set; }
         public string Direccion { get; set; }
+        public int ServicioId { get; set; }
+        public Servicio Servicio { get; set; }
 
     }
     public class Resul
     {
         public bool Exito { get; set; }
-        public string Mensaj { get; set; }
+        public string Mensaje { get; set; }
     }
 }

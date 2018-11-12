@@ -322,7 +322,6 @@
             this.idTextBox.ReadOnly = true;
             this.idTextBox.Size = new System.Drawing.Size(234, 20);
             this.idTextBox.TabIndex = 8;
-            this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
             // nombreTextBox
             // 

@@ -15,6 +15,7 @@ namespace Win.Rentas
     public partial class Proveedores : Form
     {
         ProveedoresBL _proveedores;
+        ServicioBL _servicios;
 
         public Proveedores()
         {
@@ -23,41 +24,9 @@ namespace Win.Rentas
             _proveedores= new ProveedoresBL();
             listaProveedoresBindingSource.DataSource = _proveedores.ObtenerProveedores();
 
-        }
+            _servicios = new ServicioBL();
+            listaServiciosBindingSource.DataSource = _servicios.ObtenerServicio();
 
-        private void DeshabilitarHabilitarBotones(bool valor)
-        {
-            bindingNavigatorMoveFirstItem.Enabled = valor;
-            bindingNavigatorMoveLastItem.Enabled = valor;
-            bindingNavigatorMovePreviousItem.Enabled = valor;
-            bindingNavigatorMoveNextItem.Enabled = valor;
-            bindingNavigatorPositionItem.Enabled = valor;
-
-            bindingNavigatorAddNewItem.Enabled = valor;
-            bindingNavigatorDeleteItem.Enabled = valor;
-            toolStripCancelar.Visible = !valor;
-
-        }
-
-        private void Eliminar(int id)
-        {
-
-            var resultado = _proveedores.EliminarProveedor(id);
-
-            if (resultado == true)
-            {
-                listaProveedoresBindingSource.ResetBindings(true);
-            }
-            else
-            {
-                MessageBox.Show("Ocurrio un error al eliminar el Proveedor!!");
-            }
-        }
-
-        private void toolStripCancelar_Click(object sender, EventArgs e)
-        {
-            DeshabilitarHabilitarBotones(true);
-            Eliminar(0);
         }
 
         private void listaProveedoresBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
@@ -80,6 +49,27 @@ namespace Win.Rentas
             }
         }
 
+        private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
+        {
+            _proveedores.AgregarProveedor();
+            listaProveedoresBindingSource.MoveLast();
+            DeshabilitarHabilitarBotones(false);
+        }
+
+        private void DeshabilitarHabilitarBotones(bool valor)
+        {
+            bindingNavigatorMoveFirstItem.Enabled = valor;
+            bindingNavigatorMoveLastItem.Enabled = valor;
+            bindingNavigatorMovePreviousItem.Enabled = valor;
+            bindingNavigatorMoveNextItem.Enabled = valor;
+            bindingNavigatorPositionItem.Enabled = valor;
+
+            bindingNavigatorAddNewItem.Enabled = valor;
+            bindingNavigatorDeleteItem.Enabled = valor;
+            toolStripCancelar.Visible = !valor;
+
+        }
+
         private void bindingNavigatorDeleteItem_Click_1(object sender, EventArgs e)
         {
             if (idTextBox.Text != "")
@@ -93,11 +83,25 @@ namespace Win.Rentas
             }
         }
 
-        private void bindingNavigatorAddNewItem_Click_1(object sender, EventArgs e)
+        private void Eliminar(int id)
         {
-            _proveedores.AgregarProveedor();
-            listaProveedoresBindingSource.MoveLast();
-            DeshabilitarHabilitarBotones(false);
+
+            var resultado = _proveedores.EliminarProveedor(id);
+
+            if (resultado == true)
+            {
+                listaProveedoresBindingSource.ResetBindings(true);
+            }
+            else
+            {
+                MessageBox.Show("Ocurrio un error al eliminar el Proveedor!!");
+            }
+        }
+
+        private void toolStripCancelar_Click(object sender, EventArgs e)
+        {
+            DeshabilitarHabilitarBotones(true);
+            Eliminar(0);
         }
     }
 }

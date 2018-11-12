@@ -17,6 +17,7 @@ namespace BL.Rentas
         public DbSet<Ciudad> Ciudades { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Proveedores> Proveedores { get; set; }
+        public DbSet<Servicio> Servicios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }

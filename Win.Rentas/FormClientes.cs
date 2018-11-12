@@ -104,11 +104,6 @@ namespace Win.Rentas
             }
         }
 
-        private void idTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripButtonCancelar_Click(object sender, EventArgs e)
         {
             DeshabilitarHabilitarBotones(true);

@@ -1,0 +1,10 @@
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\BL.Rentas.dll.config
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\BL.Rentas.dll
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\BL.Rentas.pdb
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\EntityFramework.dll
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\EntityFramework.xml
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\obj\Debug\BL.Rentas.csprojResolveAssemblyReference.cache
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\obj\Debug\BL.Rentas.dll
+C:\Users\Slingbox\Desktop\Rentas_Proveedores-Master_2-master\BL.Rentas\obj\Debug\BL.Rentas.pdb

@@ -39,21 +39,5 @@ namespace Win.Rentas
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
         }
-
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-        }
-
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                //textBox2.Focus();
-            
-
-            }
-        
     }
-}
 }
